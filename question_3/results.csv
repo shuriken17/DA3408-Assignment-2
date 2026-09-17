@@ -1,0 +1,9 @@
+completion_index,shard,rows_total,rows_invalid,invalid_reasons,validate_seconds,pod_name,node_name,pod_phase
+0,shard_00.csv,5000,5,"{""missing:signup_date"": 1, ""bad_email"": 2, ""missing:country"": 2}",0.017,shard-validation-0-smcpj,minikube,Succeeded
+1,shard_01.csv,5000,12,"{""bad_email"": 8, ""missing:country"": 2, ""missing:signup_date"": 2}",0.023,shard-validation-1-r2q88,minikube,Succeeded
+2,shard_02.csv,5000,6,"{""missing:country"": 2, ""bad_email"": 3, ""missing:signup_date"": 1}",0.038,shard-validation-2-wf4nv,minikube,Succeeded
+3,shard_03.csv,5000,13,"{""bad_email"": 9, ""missing:signup_date"": 3, ""missing:country"": 1}",0.039,shard-validation-3-szrc8,minikube,Succeeded
+4,shard_04.csv,5000,7,"{""missing:signup_date"": 2, ""bad_email"": 4, ""missing:country"": 1}",0.016,shard-validation-4-98npv,minikube,Succeeded
+5,shard_05.csv,5000,14,"{""bad_email"": 12, ""missing:country"": 2}",0.062,shard-validation-5-6tmsn,minikube,Succeeded
+6,shard_06.csv,5000,8,"{""bad_email"": 7, ""missing:country"": 1}",0.019,shard-validation-6-6t5td,minikube,Succeeded
+7,shard_07.csv,5000,15,"{""bad_email"": 12, ""missing:signup_date"": 2, ""missing:country"": 1}",0.034,shard-validation-7-nbrx2,minikube,Succeeded

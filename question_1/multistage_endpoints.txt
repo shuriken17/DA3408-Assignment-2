@@ -1,0 +1,10 @@
+IMAGE            ID             DISK USAGE   CONTENT SIZE   EXTRA
+spam-api:naive   5fadbec1d1ea       2.22GB          593MB        
+spam-api:v1      cc5e62a5c5cd        555MB          129MB   U    
+HTTP/1.1 200 OK
+date: Thu, 17 Sep 2026 09:05:30 GMT
+server: uvicorn
+content-length: 15
+content-type: application/json
+
+{"status":"ok"}{"label":"spam"}{"label":"ham"}

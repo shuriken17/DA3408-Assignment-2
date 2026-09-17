@@ -1,0 +1,15 @@
+FROM python:3.10
+
+WORKDIR /app
+
+COPY requirements.txt requirements-train.txt ./
+RUN pip install -r requirements.txt -r requirements-train.txt
+
+COPY . .
+
+RUN python generate_dataset.py \
+ && python train_model.py
+
+ENV MODEL_PATH=/app/model.joblib
+EXPOSE 8000
+CMD ["python", "-m", "uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]

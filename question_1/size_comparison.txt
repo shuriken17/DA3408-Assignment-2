@@ -1,0 +1,3 @@
+naive      : 593 MB
+multistage : 129 MB
+reduction  : 78.24%

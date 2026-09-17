@@ -1,0 +1,29 @@
+
+PHASE A - cold cache, every request a MISS
+{
+  "phase": "miss",
+  "n": 200,
+  "cache_header_counts": {
+    "HIT": 0,
+    "MISS": 200,
+    "OFF": 0
+  },
+  "handler_mean_ms": 1.3553,
+  "handler_median_ms": 1.3335
+}
+
+PHASE B - warm cache, every request a HIT
+{
+  "phase": "hit",
+  "n": 200,
+  "cache_header_counts": {
+    "HIT": 200,
+    "MISS": 0,
+    "OFF": 0
+  },
+  "handler_mean_ms": 0.4509,
+  "handler_median_ms": 0.4165
+}
+
+RESULT
+handler median: 1.3335 ms (miss) vs 0.4165 ms (hit) = 3.20x faster

@@ -1,0 +1,4 @@
+message: {"text":"Congratulations! You have WON a laptop. Claim NOW at tinyurl.com/abc"}
+x-cache: HIT
+x-handler-ms: 1.188
+total: 0.008182s

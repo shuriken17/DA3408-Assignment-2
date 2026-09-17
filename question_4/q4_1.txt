@@ -1,0 +1,10 @@
+NAME                        READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+spam-api-754b6df5fc-8x4z4   1/1     Running   0          3m44s   10.244.0.14   minikube   <none>           <none>
+spam-api-754b6df5fc-z4lr7   1/1     Running   0          3m51s   10.244.0.13   minikube   <none>           <none>
+NAME           TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+spam-api-svc   NodePort   10.110.104.26   <none>        80:30080/TCP   16h
+{"status":"ok","version":"v1","pod":"spam-api-754b6df5fc-8x4z4","node":"minikube"}
+{"status":"ok","version":"v1","pod":"spam-api-754b6df5fc-z4lr7","node":"minikube"}
+{"status":"ok","version":"v1","pod":"spam-api-754b6df5fc-8x4z4","node":"minikube"}
+{"status":"ok","version":"v1","pod":"spam-api-754b6df5fc-8x4z4","node":"minikube"}
+{"label":"spam"}

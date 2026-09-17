@@ -1,0 +1,7 @@
+Docker Compose lets multiple containers run together on one machine and
+talk to each other by name like here, "cache" correctly resolved to the Redis
+container's address from inside the api container. It only works on a
+single machine, though, with no way to spread containers across several
+servers. Kubernetes solves that larger problem as it can run containers
+across many machines and keeps a chosen number of copies of each one
+running automatically.

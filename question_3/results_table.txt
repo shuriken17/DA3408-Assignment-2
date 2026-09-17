@@ -1,0 +1,14 @@
+ completion_index        shard  rows_total  rows_invalid  validate_seconds                 pod_name node_name
+                0 shard_00.csv        5000             5             0.017 shard-validation-0-smcpj  minikube
+                1 shard_01.csv        5000            12             0.023 shard-validation-1-r2q88  minikube
+                2 shard_02.csv        5000             6             0.038 shard-validation-2-wf4nv  minikube
+                3 shard_03.csv        5000            13             0.039 shard-validation-3-szrc8  minikube
+                4 shard_04.csv        5000             7             0.016 shard-validation-4-98npv  minikube
+                5 shard_05.csv        5000            14             0.062 shard-validation-5-6tmsn  minikube
+                6 shard_06.csv        5000             8             0.019 shard-validation-6-6t5td  minikube
+                7 shard_07.csv        5000            15             0.034 shard-validation-7-nbrx2  minikube
+
+Total invalid rows across all shards: 80
+Distinct nodes that ran work: ['minikube']
+Ground-truth check: ALL MATCH
+wrote results.csv

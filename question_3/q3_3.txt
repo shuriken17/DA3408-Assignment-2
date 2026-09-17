@@ -1,0 +1,14 @@
+NAME                 PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+standard (default)   k8s.io/minikube-hostpath   Delete          Immediate           false                  24h
+No resources found in default namespace.
+
+minikube's default storage is tied to one node's disk since it uses
+k8s.io/minikube-hostpath. If pods run on different nodes, a pod on one
+node cannot read a volume saved on another node's disk. So using a shared
+volume to collect results would not be safe here.
+
+Instead, each pod just prints its result and collect_results.py reads it
+back using the Kubernetes API. This works no matter which node a pod ran
+on and there is no storage to set up. No PersistentVolumeClaim was
+created which shows this was a choice, not something forced by missing
+storage.

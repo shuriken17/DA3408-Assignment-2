@@ -1,0 +1,5 @@
+607 checks were made during the v1 to v2 update; 604 got a normal
+response (99.5%) and 3 did not. All 3 happened exactly when the old and
+new pods were being swapped with v1 and v2 both answering in the same
+second right around them. This is a brief expected gap during the
+handoff, not a misconfiguration.

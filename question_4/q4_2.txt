@@ -1,0 +1,13 @@
+NAME                        READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+spam-api-754b6df5fc-xtt9h   1/1     Running   0          77s     10.244.0.15   minikube   <none>           <none>
+spam-api-754b6df5fc-z4lr7   1/1     Running   0          6m26s   10.244.0.13   minikube   <none>           <none>
+6m12s       Normal    Killing             pod/spam-api-5cdfd689bf-cnb4n    Stopping container api
+6m12s       Normal    SuccessfulDelete    replicaset/spam-api-5cdfd689bf   Deleted pod: spam-api-5cdfd689bf-cnb4n
+6m12s       Warning   Unhealthy           pod/spam-api-5cdfd689bf-cnb4n    Readiness probe failed: Get "http://10.244.0.2:8000/healthz": dial tcp 10.244.0.2:8000: connect: connection refused
+6m12s       Normal    ScalingReplicaSet   deployment/spam-api              Scaled down replica set spam-api-5cdfd689bf from 1 to 0
+77s         Normal    Scheduled           pod/spam-api-754b6df5fc-xtt9h    Successfully assigned default/spam-api-754b6df5fc-xtt9h to minikube
+77s         Normal    Killing             pod/spam-api-754b6df5fc-8x4z4    Stopping container api
+77s         Normal    SuccessfulCreate    replicaset/spam-api-754b6df5fc   Created pod: spam-api-754b6df5fc-xtt9h
+76s         Normal    Started             pod/spam-api-754b6df5fc-xtt9h    Container started
+76s         Normal    Created             pod/spam-api-754b6df5fc-xtt9h    Container created
+76s         Normal    Pulled              pod/spam-api-754b6df5fc-xtt9h    Container image "spam-api:v1" already present on machine and can be accessed by the pod

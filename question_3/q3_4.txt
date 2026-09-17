@@ -1,0 +1,4 @@
+With 6 CPUs, parallelism should be raised to 8 since 8 pods at 500m each
+only need 4000m out of the available 6000m. At parallelism 4, the job
+took two rounds to finish all 8 shards. Running all 8 at once removes
+that second round so the job should finish in roughly half the time.

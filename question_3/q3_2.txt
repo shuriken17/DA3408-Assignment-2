@@ -1,0 +1,20 @@
+NAME                       READY   STATUS      RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+shard-validation-0-smcpj   0/1     Completed   0          5m32s   10.244.0.5    minikube   <none>           <none>
+shard-validation-1-r2q88   0/1     Completed   0          5m32s   10.244.0.6    minikube   <none>           <none>
+shard-validation-2-wf4nv   0/1     Completed   0          5m32s   10.244.0.7    minikube   <none>           <none>
+shard-validation-3-szrc8   0/1     Completed   0          5m32s   10.244.0.8    minikube   <none>           <none>
+shard-validation-4-98npv   0/1     Completed   0          5m8s    10.244.0.9    minikube   <none>           <none>
+shard-validation-5-6tmsn   0/1     Completed   0          5m8s    10.244.0.11   minikube   <none>           <none>
+shard-validation-6-6t5td   0/1     Completed   0          5m8s    10.244.0.10   minikube   <none>           <none>
+shard-validation-7-nbrx2   0/1     Completed   0          5m7s    10.244.0.12   minikube   <none>           <none>
+NAME               STATUS     COMPLETIONS   DURATION   AGE     CONTAINERS   IMAGES               SELECTOR
+shard-validation   Complete   8/8           49s        5m32s   validator    shard-validator:v1   batch.kubernetes.io/controller-uid=6135b065-d349-4435-8f83-8a9c18244d9e
+POD                        NODE       STATUS
+shard-validation-0-smcpj   minikube   Succeeded
+shard-validation-1-r2q88   minikube   Succeeded
+shard-validation-2-wf4nv   minikube   Succeeded
+shard-validation-3-szrc8   minikube   Succeeded
+shard-validation-4-98npv   minikube   Succeeded
+shard-validation-5-6tmsn   minikube   Succeeded
+shard-validation-6-6t5td   minikube   Succeeded
+shard-validation-7-nbrx2   minikube   Succeeded

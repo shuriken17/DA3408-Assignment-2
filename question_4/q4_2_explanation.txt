@@ -1,0 +1,5 @@
+The ReplicaSet controller recreates a deleted pod, not the Deployment
+directly, shown above by the SuccessfulCreate event coming from
+replicaset/spam-api-754b6df5fc. Each ReplicaSet keeps a fixed number of
+pods running, 2 in this case, so when one is deleted, it notices the
+shortfall and creates a replacement automatically within seconds.

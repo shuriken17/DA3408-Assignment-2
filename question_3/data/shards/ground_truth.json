@@ -1,0 +1,34 @@
+{
+  "shard_00": {
+    "rows": 5000,
+    "invalid": 5
+  },
+  "shard_01": {
+    "rows": 5000,
+    "invalid": 12
+  },
+  "shard_02": {
+    "rows": 5000,
+    "invalid": 6
+  },
+  "shard_03": {
+    "rows": 5000,
+    "invalid": 13
+  },
+  "shard_04": {
+    "rows": 5000,
+    "invalid": 7
+  },
+  "shard_05": {
+    "rows": 5000,
+    "invalid": 14
+  },
+  "shard_06": {
+    "rows": 5000,
+    "invalid": 8
+  },
+  "shard_07": {
+    "rows": 5000,
+    "invalid": 15
+  }
+}

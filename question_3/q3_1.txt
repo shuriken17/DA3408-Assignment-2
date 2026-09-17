@@ -1,0 +1,12 @@
+This cluster has one node with 4 CPUs (4000m). kubectl describe nodes
+shows Kubernetes own components using about 1250m, leaving roughly
+2750m free.
+
+The validator reads one CSV file in a simple loop, so it can never use
+more than one core. Each pod was given 500m as both request and limit,
+guaranteeing a fixed half-core. 4 pods need 2000m total which is well within
+the 2750m available.
+
+Parallelism 4 was chosen because the node only has 4 physical cores.
+More pods would just compete for the same CPU time instead of finishing
+faster.

@@ -1,0 +1,58 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.naive
+#1 transferring dockerfile: 385B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.10
+#2 DONE 2.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/python:3.10@sha256:70c9cc6756056ca7e438a3198af44b7791a958438594a0b5348603c77763d312
+#4 resolve docker.io/library/python:3.10@sha256:70c9cc6756056ca7e438a3198af44b7791a958438594a0b5348603c77763d312 0.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 88.22kB 0.0s done
+#5 DONE 0.0s
+
+#6 [3/6] COPY requirements.txt requirements-train.txt ./
+#6 CACHED
+
+#7 [2/6] WORKDIR /app
+#7 CACHED
+
+#8 [4/6] RUN pip install -r requirements.txt -r requirements-train.txt
+#8 CACHED
+
+#9 [5/6] COPY . .
+#9 DONE 0.1s
+
+#10 [6/6] RUN python generate_dataset.py  && python train_model.py
+#10 3.262 accuracy: 1.0000
+#10 3.262               precision    recall  f1-score   support
+#10 3.262 
+#10 3.262          ham       1.00      1.00      1.00       140
+#10 3.262         spam       1.00      1.00      1.00        60
+#10 3.262 
+#10 3.262     accuracy                           1.00       200
+#10 3.262    macro avg       1.00      1.00      1.00       200
+#10 3.262 weighted avg       1.00      1.00      1.00       200
+#10 3.262 
+#10 3.262 saved pipeline : model.joblib
+#10 DONE 3.5s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 0.2s done
+#11 exporting manifest sha256:e47ba2d230a657a0cc86864b4d8df98cfa577428a4e2fc25505750cb7ecf9dcb 0.0s done
+#11 exporting config sha256:0a2e38af9167baef4a7cecea0c5053ac71c8946a6da0b5ade3e7b0fe3722dad0 0.0s done
+#11 exporting attestation manifest sha256:7048066a67ec76988297f8da0a9d9d0c13affe1eea3bd88f4495a53a5b5700cf 0.0s done
+#11 exporting manifest list sha256:5fadbec1d1eab68171800ee674f11fe08aa87538653ba1ee9447e13b4ff707f4 0.0s done
+#11 naming to docker.io/library/spam-api:naive
+#11 naming to docker.io/library/spam-api:naive done
+#11 unpacking to docker.io/library/spam-api:naive 0.1s done
+#11 DONE 0.5s

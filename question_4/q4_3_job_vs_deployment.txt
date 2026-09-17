@@ -1,0 +1,4 @@
+As a Job, the image could not be updated without deleting and recreating
+it, leaving no pod running in between to serve traffic. A Job also
+expects pods to eventually finish, but this API never exits on its own,
+so it would never be marked complete.

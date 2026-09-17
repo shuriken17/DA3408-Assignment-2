@@ -1,0 +1,5 @@
+The Job in Q3 succeeded when its pods finished and stopped. This
+Deployment succeeds when its pods keep running so a pod that stops
+unexpectedly gets replaced right away. This fits the two workloads well:
+Q3 was a fixed batch of work with a clear end while this API has no end
+and needs to stay up and be updated without going down.

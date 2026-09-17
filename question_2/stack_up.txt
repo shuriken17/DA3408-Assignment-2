@@ -1,0 +1,8 @@
+NAME         IMAGE            COMMAND                  SERVICE   CREATED         STATUS                   PORTS
+spam-api     spam-api:v1      "python -m uvicorn a…"   api       3 minutes ago   Up 3 minutes             0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+spam-cache   redis:7-alpine   "docker-entrypoint.s…"   cache     3 minutes ago   Up 3 minutes (healthy)   6379/tcp
+spam-api  | INFO:     Waiting for application startup.
+spam-api  | INFO:     Application startup complete.
+spam-api  | [startup] cache connected: cache:6379
+spam-api  | [startup] model loaded from /app/model.joblib
+cache:  172.18.0.2

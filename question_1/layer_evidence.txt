@@ -1,0 +1,13 @@
+naive image compilers:
+/usr/bin/gcc
+/usr/bin/g++
+/usr/bin/make
+
+multi-stage image compilers:
+no compilers present
+
+naive image pandas check:
+naive has pandas: 2.3.3
+
+multi-stage image pandas check:
+ModuleNotFoundError: No module named 'pandas'

@@ -1,0 +1,8 @@
+The multi-stage image is 78.24% smaller (593 MB to 129 MB).
+
+The final stage uses python:3.10-slim instead of python:3.10 - the naive
+image has gcc, g++ and make installed; the multi-stage image has none.
+
+Pandas is also missing from the multi-stage image (ModuleNotFoundError on
+import) while the naive image has pandas 2.3.3. Pandas is only installed
+in the discarded builder stage.
