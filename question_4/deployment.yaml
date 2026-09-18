@@ -5,7 +5,7 @@ metadata:
   labels:
     app: spam-api
   annotations:
-    kubernetes.io/change-cause: "v2: added model field to healthz"
+    kubernetes.io/change-cause: "v1: initial rollout"
 spec:
   replicas: 2
   revisionHistoryLimit: 5
@@ -24,14 +24,14 @@ spec:
     spec:
       containers:
         - name: api
-          image: spam-api:v2
+          image: spam-api:v1
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
               containerPort: 8000
           env:
             - name: APP_VERSION
-              value: "v2"
+              value: "v1"
             - name: POD_NAME
               valueFrom:
                 fieldRef:
